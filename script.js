@@ -2,11 +2,11 @@ const cursor = document.getElementById('lariat-cursor');
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
-    const rot = (Math.random() - 0.5) * 6;
+    const rot = (Math.random() - 0.5) * 20;
     cursor.style.transform = `translate(-50%, -50%) rotate(${rot}deg)`;
 });
 
-const text = "Sóc en Lariat. He analitzat el teu sistema... massa color. Massa ordre. Descarrega el fitxer i entra al meu caos.";
+const text = "ELS TEUS SECRETS SÓN FOSCOS, PETIT MORTAL... PERÒ M'AGRADEN. JUGUEM?";
 let i = 0;
 const target = document.getElementById("typed-text");
 
@@ -23,4 +23,4 @@ const observer = new IntersectionObserver((entries) => {
         typeEffect();
     }
 }, { threshold: 0.5 });
-observer.observe(document.querySelector('.action'));
+observer.observe(document.querySelector('.action-zone'));
